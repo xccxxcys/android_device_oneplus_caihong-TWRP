@@ -5,10 +5,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_ossi.mk
-
-COMMON_LUNCH_CHOICES := \
-    omni_ossi-user \
-    omni_ossi-userdebug \
-    omni_ossi-eng
+add_lunch_combo omni_ossi-user
+add_lunch_combo omni_ossi-userdebug
+add_lunch_combo omni_ossi-eng
